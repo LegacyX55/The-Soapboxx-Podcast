@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Soapboxx Podcast- Portfolio Page</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <section>
+    <header>
+      <nav>
+        <a href="index.html"><img src="images/soapboxxlogo.png" alt="soapboxxlogo"></a>
+        <div class="nav-links" id="navLinks">
+          <ul>
+            <li>
+              <a href="index.html">HOME</a>
+            </li>
+            <li>
+              <a href="about.html">ABOUT</a>
+            </li>
+            <li>
+              <a href="podcast.html">PODCAST</a>
+            </li>
+            <li>
+              <a href="contact.html">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+  </section>
+  <section>
+    <div class="container">
+      <h1>Connect with The Soapboxx Podcast</h1>
+      <p>Want to join our Soapboxx Nation? Please fill out the contact form and someone will be in contact with you soon.</p>
+      <form class="contact-form" id="test_form" name="test_form" method="post" action="form.php" onsubmit="return validateForm(this)">
+        <div class="first-name input-section">
+          <label class="label_input_wrap" for="firstname">First Name:</label> 
+          <input id="firstname" name="req_firstname" placeholder="Enter Here" type="text">
+        </div>
+        <div class="last-name input-section">
+          <label class="label_input_wrap" for="lastname">Last Name:</label> 
+          <input id="lastname" name="req_lastname" placeholder="Enter Here" type="text">
+        </div>
+        <div class="email input-section">
+          <label class="label_input_wrap" for="email">Email:</label> 
+          <input id="email" name="req_email" placeholder="Ex.legacycole@example.com" type="email">
+        </div>
+        <div class="phone-number input-section">
+          <label class="label_input_wrap" for="phonenumber">Phone Number:</label><input id="phonenumber" name="req_PhoneNumber" placeholder="Ex.555-555-5555" type="tel">
+        </div>
+        <div class="comments input-section">
+          <label class="label_input_wrap" for="comments">Comments:</label> 
+          <textarea cols="55" id="comments" name="req_comments" placeholder="Tell Us How You Feel" rows="15"></textarea>
+        </div><!--<div class="checkbox"
+     <h3>Favorite Podcast Segments</h3>
+     <input type="checkbox" name="podcast" value="What's Poppin" id="What's Poppin"/><label for="What's Poppin">What's Poppin</label>
+     <input type="checkbox" name="podcast" value="Moral of the Story" id="Moral of the Story"/><label for="Moral of the Story">Moral of the Story</label>
+     <input type="checkbox" name="podcast" value="Celebrity Selfie" id="Celebrity Selfie"/><label for="Celebrity Selfie">Celebrity Selfie</label>
+   </div> -->
+        <div class="radiobutton input-section">
+          <h3>Favorite Co-Host</h3>
+          <input id="allenyork" name="podcast" type="radio" value="allen-york"> 
+          <label for="allenyork">Allen York</label>
+          <input id="javonnihampton" name="podcast" type="radio" value="javonnihampton"> 
+          <label for="javonnihampton">Javonni Hampton</label> 
+          <input id="jessicaandrade" name="podcast" type="radio" value="jessicaandrade"> 
+          <label for="jessicaandrade">Jessica Andrade</label>
+        </div>
+        <div class="dropdown input-section">
+          <label class="label_input_wrap" for="service">How do you listen to The Soapboxx Podcast?</label> <select id="service" name="req_service">
+            <option selected value="YouTube">
+              YouTube
+            </option>
+            <option value="Spotify">
+              Spotify
+            </option>
+            <option value="iTunes">
+              iTunes
+            </option>
+            <option value="Facebook">
+              Facebook
+            </option>
+            <option value="SoundCloud">
+              SoundCloud
+            </option>
+          </select>
+        </div>
+        <div class="datepicker input-section">
+          <label for="listen">When did you start listening?</label> 
+          <input id="listen" name="req_listen" type="date">
+        </div>
+        <div class="upload-file input-section">
+          <label for="uploadfile">Upload SPBXX Nation Selfie</label> 
+          <input id="uploadfile" name="myfile" type="file">
+        </div>
+        <div class="submit">
+          <input type="submit">
+        </div>
+        <div class="reset">
+          <input type="reset">
+        </div>
+      </form>
+    </div>
+    <footer>
+      <section class="footer">
+        <h4>About Us</h4>
+        <p>The Soapboxx Podcast is an uncensored and unscripted Independent News Media Outlet.<br> We are dedicated to providing a platform to uplift, inform, empower and entertain.</p>
+    <div class="icons"></div>
+    <i class="fa fa-facebook"></i>
+    <i class="fa fa-twitter"></i>
+    <i class="fa fa-instagram"></i>
+    <p><p>Curated by <i class="fa fa-bullhorn"></i> T.J. Legacy-Cole</p></p>
+      </section>
+    </footer>
+  </section>
+</body>
+</html>
